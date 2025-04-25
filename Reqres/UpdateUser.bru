@@ -1,0 +1,18 @@
+meta {
+  name: UpdateUser
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://reqres.in/api/users/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "morpheus",
+      "job": "zion resident"
+  }
+}
